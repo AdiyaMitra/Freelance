@@ -1,26 +1,11 @@
 import React from 'react'
 import './App.css'
-import HeroSection from "./components/HeroSection";
-import { heroContent } from "./content/heroContent";
+//Pages
+import LandingPage from './pages/LandingPage';
+import DigitalPRPage from './pages/DigitalPRPage';
+//Routing
 import { BrowserRouter, Routes, Route } from "react-router";
 
-const LandingPage = () => {
-  const content = heroContent.landingPage;
-  return (
-    <>
-      <HeroSection {...content} />
-    </>
-  );
-};
-
-const DigitalPRPage = () => {
-  const content = heroContent.digitalPR;
-  return (
-    <>
-      <HeroSection {...content} />
-    </>
-  );
-};
 
 function App() {
   return (
